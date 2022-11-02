@@ -1,0 +1,21 @@
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+img{
+    border-radius: 50%;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+
+}
+#btn__zuri,#books,#book__python,#pitch,#book__design{
+    background-color: lightgoldenrodyellow;
+    margin: 20px;
+}
+#slack{
+    display:none;
+}
