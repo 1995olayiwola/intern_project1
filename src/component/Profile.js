@@ -9,7 +9,10 @@ const Profile = () => {
       <small id="slack">Olayiwola Abdur Rahmon</small>
       </div>
         
+      <a id="twitter" href="https://twitter.com/abdur_olayiwola"> 
+        <h1>Twitter Link </h1>
         
+        </a>
         <a id="btn__zuri" href="https://training.zuri.team/"> 
         <h1>Zuri Team </h1>
         
