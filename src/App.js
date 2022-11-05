@@ -1,12 +1,29 @@
 
 import './App.css';
-import Profile from './component/Profile';
-
+import React from 'react';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import MyErrorBoundary from './MyErrorBoundary';
+import { Suspense } from 'react';
+//import Loading from './Loading';
+const Profile = React.lazy(()=>import('./component/Profile'));
+const Contact = React.lazy(()=>import('./component/Contact'));
 function App() {
   return (
-    <div className="App">
-      <Profile/>
-    </div>
+    
+      
+    <MyErrorBoundary>
+      <Suspense>
+      
+<Router>
+  <Switch>
+    <Route component={Profile} path="/" exact/>
+    <Route component={Contact} path="/contact" exact/>
+  </Switch>
+</Router>
+
+</Suspense>
+</MyErrorBoundary>
+
   );
 }
 

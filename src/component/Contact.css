@@ -1,0 +1,8 @@
+.text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn_submit{
+    text-align: center;
+}
