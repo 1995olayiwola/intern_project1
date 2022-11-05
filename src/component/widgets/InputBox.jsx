@@ -22,7 +22,7 @@ function InputBox({
   end = null,
 }) {
   return (
-    <div>
+    <div style={{marginBottom:'20px'}}>
       <TextField
         fullWidth
         type={type}

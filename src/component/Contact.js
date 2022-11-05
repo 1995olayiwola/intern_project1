@@ -29,7 +29,7 @@ return {
   
       const handleSubmit = (e)=>{
         e.preventDefault();
-        console.log(form)
+        console.log(form);
       }
   console.log(form)
   return (
@@ -37,7 +37,7 @@ return {
       <h1 style={{textAlign:'center'}}>Contact Me</h1>
       <p style={{textAlign:'center'}}>Hi there, contact me to ask me about anything you have in mind.</p>
       <div className='sub' style={{width:'100%'}}>
-        <TextBox style={{textAlign:'center',margin:'20px',width:'49%', float:'right'}} type="text" name="text" label="First name" value={form.text} handleChange={handleChange} id="first_last" placeholder="Enter your first name"/>
+        <TextBox style={{textAlign:'center',margin:'20px',width:'49%', float:'right'}} type="text" name="text" label="First name" value={form.text} handleChange={handleChange} id="first_last" placeholder="Enter your first name"/>{' '}
         <TextBox  style={{textAlign:'center',margin:'20px'}} type="text" name="text2" label="Last name" value={form.text2} handleChange={handleChange} id="last_name" placeholder="Enter your last name"/>
         </div>
         <TextBox style={{textAlign:'center',margin:'20px',position:'relative',left:'30px'}} type="email" name="text3" label="Email" value={form.text3} handleChange={handleChange} id="email" placeholder="youremail@gmail.com"/>
